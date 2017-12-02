@@ -35,7 +35,7 @@ function ycal()
 	var result = (MD5(value));
     var result_int = parseInt(result,16);	    
     var myvariable = expmod(5,parseInt(String(result).slice(0,12),16),97);
-  window.location.href = "http://localhost/hack/register.php?id="+ String(myvariable)+"&uname="+String(document.getElementById("f1").elements[0].value);
+  window.location.href = "http://localhost/hack/registration.php?id="+ String(myvariable)+",uname="+String(document.getElementById("f1").elements[0].value);
 
     
 
